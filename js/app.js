@@ -1,7 +1,7 @@
 
 // Añadir el SW
 if ( navigator.serviceWorker ) {
-    navigator.serviceWorker.register('../sw.js');
+    navigator.serviceWorker.register('/heroes-pwa-borrar/sw.js');
 }
 
 
