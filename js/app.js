@@ -1,7 +1,15 @@
 
+var url = window.location.href;
+var swlocation = '/heroes-pwa-borrar/sw.js'; 
 // Añadir el SW
 if ( navigator.serviceWorker ) {
-    navigator.serviceWorker.register('/heroes-pwa-borrar/sw.js');
+
+    if ( url.includes('localhost') ) {
+        swlocation = '/sw.js';
+    }
+
+    // navigator.serviceWorker.register('/heroes-pwa-borrar/sw.js');
+    navigator.serviceWorker.register(swlocation);
 }
 
 
