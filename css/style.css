@@ -286,8 +286,6 @@ and (-webkit-device-pixel-ratio : 3) {
     }
     
     .out {
-      position: absolute;
-      left: 5%;
       top: 45px;
     }
 
