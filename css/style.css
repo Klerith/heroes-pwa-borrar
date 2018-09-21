@@ -278,11 +278,17 @@ and (-webkit-device-pixel-ratio : 3) {
     }
 
     #cancel-btn {
-      top: 40px;
+      top: 45px;
     }
       
     .new {
-      top:40px;
+      top:45px;
+    }
+    
+    .out {
+      position: absolute;
+      left: 5%;
+      top: 45px;
     }
 
 }
@@ -294,6 +300,7 @@ and (-webkit-device-pixel-ratio : 3) {
   .new {
     position: absolute;
     right: 5%; 
+    top: 30px;
   }
 
   .out {
