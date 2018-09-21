@@ -16,9 +16,6 @@ if ( navigator.serviceWorker ) {
 
 
 
-
-
-
 // Referencias de jQuery
 
 var titulo      = $('#titulo');

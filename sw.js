@@ -1,7 +1,7 @@
 importScripts('js/sw-utils.js');
 
 
-const STATIC_CACHE    = 'static-v9';
+const STATIC_CACHE    = 'static-v10';
 const DYNAMIC_CACHE   = 'dynamic-V1';
 const INMUTABLE_CACHE = 'inmutable-V1';
 
@@ -51,7 +51,7 @@ self.addEventListener('install', e => {
 
 // Fetch y cache
 self.addEventListener('fetch', e => {
-    
+
 
     const respuesta = caches.match( e.request ).then( res => {
 
@@ -60,6 +60,8 @@ self.addEventListener('fetch', e => {
         } else {
             return fetch( e.request ).then( res => {
                 return actualizaCacheDinamico( DYNAMIC_CACHE, e.request, res );
+            }).catch(e =>{
+                console.log('Error en el FETCH!!!', e);
             });
         }
 
