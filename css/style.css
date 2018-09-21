@@ -277,7 +277,10 @@ and (-webkit-device-pixel-ratio : 3) {
       top: 10px;
     }
 
-      
+    #cancel-btn {
+      top: 40px !important;
+    }
+    
     .new {
       top: 40px !important;
     }
